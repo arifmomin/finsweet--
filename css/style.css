@@ -1,0 +1,538 @@
+/* ==============================font link start======================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* ----------------------------font link end--------------------------- */
+/* ==============================common css start======================== */
+*{
+    margin: 0%;
+    padding: 0%;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul,ol,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+img{
+    vertical-align: middle;
+}
+
+h1,h2,h3,h4,h5,h6, p, ul,ol,li,img,span,a{
+    margin: 0%;
+    padding: 0%;
+    outline: 0;
+}
+:root{
+    --Background-Color:#1C1E53;
+    --White:#FFFFFF;
+    --Gray:#F4F6FC;
+    --Yellow-Color:#FCD980;
+    --Dark-Blue:#282938;
+    --Royal-Blue:#2405F2;
+    --Poppins:"Poppins", sans-serif;
+    --Manrope:"Manrope", sans-serif;
+}
+body{
+    font-family: var(--Poppins);
+}
+
+/* ----------------------------common css end--------------------------- */
+/* ==============================menu Markup start======================== */
+.menu_bar{
+    padding: 16px 0;
+    background: var(--Background-Color);
+}
+.navbar-nav{
+    gap: 32px;
+}
+.navbar-nav .menu-item .menu-link{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #BBBBCB;
+    transition: all linear .3s;
+}
+.navbar-nav .menu-item .menu-link:hover{
+    color: var(--White);
+}
+.menu_button a{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--White);
+    padding: 16px 48px;
+    background: transparent;
+    border: 2px solid rgba(244, 246, 252, 0.37);
+    border-radius: 41px;
+    margin-left: 48px;
+    transition: all linear .3s;
+}
+.menu_button a:hover{
+    border-color: var(--Yellow-Color);
+    color: var(--Yellow-Color);
+}
+/* ----------------------------menu Markup end--------------------------- */
+/* ==============================Banner Markup start======================== */
+#banner_part{
+    padding: 192px 0 194px;
+    background: var(--Background-Color);
+}
+.banner_heading h1{
+    font-size: 54px;
+    font-weight: 600;
+    color: var(--White);
+    line-height: 74px;
+}
+.banner_heading p{
+    max-width: 582px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.70);
+    line-height: 28px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.banner_button a{
+    padding: 12px 56px;
+    background: var(--Yellow-Color);
+    border: 2px solid var(--Yellow-Color);
+    border-radius: 41px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--Manrope);
+    color: var(--Dark-Blue);
+    transition: all linear .3s;
+}
+.banner_button a:hover{
+    background: transparent;
+    color: var(--White);
+}
+.banner_scnd_button a{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--White);
+    transition: all linear .3s;
+}
+.banner_scnd_button a span{
+    margin-left: 10px;
+
+}
+.banner_scnd_button a:hover{
+    transform: translateX(5px);
+    color: var(--Yellow-Color);
+}
+/* ----------------------------Banner Markup end--------------------------- */
+/* ============================work Markup start========================== */
+#work_part{
+    padding: 128px 0;
+    background: var(--Gray);
+}
+.work_left h2{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    color: var(--Dark-Blue);
+}
+.work_left p{
+    max-width: 405px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--Dark-Blue);
+    margin: 16px 0;
+}
+.work_left .banner_scnd_button a{
+    color: var(--Royal-Blue);
+}
+.work_left .banner_scnd_button a:hover{
+    color: var(--Royal-Blue);
+}
+.work_right h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    color: var(--Dark-Blue);
+    margin:16px 0px 8px ;
+}
+.work_right p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--Dark-Blue);
+}
+/* ----------------------------work Markup end---------------------------- */
+/* ============================project Markup start========================== */
+#project_part{
+    padding: 50px 0;
+    background: var(--White);
+}
+.project_title_left h2{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    color: var(--Dark-Blue);
+}
+.project_title_right .banner_scnd_button a{
+    color: var(--Dark-Blue);
+}
+.project_title_right .banner_scnd_button a:hover{
+    color: var(--Royal-Blue);
+}
+.project_row{
+    margin-top: 64px;
+}
+.project_left{
+    position: relative;
+    overflow: hidden;
+}
+.project_left_overlay{
+    position: absolute;
+    width: 48%;
+    height: 100%;
+    background: linear-gradient(rgba(28, 30, 83, 0.42) , rgb(28, 30, 83));
+    top: 0%;
+    left: -48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0px 35px 76px 48px;
+    transition:all linear .4s ;
+}
+.project_left:hover .project_left_overlay{
+    left: 0%;
+}
+.project_left_overlay h3{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    color: var(--White);
+}
+.project_left_overlay p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--White);
+    margin: 16px 0 40px;
+}
+.project_left_overlay .banner_scnd_button a{
+    color: var(--Yellow-Color);
+}
+.project_right_top .project_left_overlay{
+    width: 100%;
+    left: 0%;
+    top: -100%;
+    padding: 0px 36px 45px 56px;
+    row-gap: 10px;
+    transition: all linear .3s;
+}
+.project_right_top:hover .project_left_overlay{
+    top: 0%;
+}
+.project_right_bottom .project_left_overlay{
+    width: 100%;
+    left: 0%;
+    top: 100%;
+    padding: 0px 36px 45px 56px;
+    row-gap: 10px;
+    transition: all linear .3s;
+}
+.project_right_bottom:hover .project_left_overlay{
+    top: 0%;
+}
+.project_right_top .project_left_overlay h3{
+    max-width: 250px;
+}
+.project_right_bottom .project_left_overlay h3{
+    max-width: 250px;
+}
+/* ----------------------------project Markup end---------------------------- */
+/* ============================design Markup start========================== */
+#design_part{
+    padding: 128px 0;
+    background: var(--Gray);
+}
+.design_title h2{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+    color: var(--Dark-Blue);
+}
+.design_title h3{
+    max-width: 630px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    color: var(--Dark-Blue);
+    margin: 0% auto;
+    margin-top: 12px;
+    margin-bottom: 47px;
+    text-align: center;
+}
+.design_col{
+    padding: 58px 32px 48px 48px;
+    background: var(--White);
+}
+.design_col h4 i{
+    font-size: 28px;
+    color: var(--Royal-Blue);
+}
+.design_col h5{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: var(--Dark-Blue);
+    margin: 22px 0 12px;
+}
+.design_col p{
+    max-width: 324px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--Dark-Blue);
+}
+/* ----------------------------design Markup end---------------------------- */
+/* ============================client Markup start========================== */
+#client_say{
+    padding: 130px 0; 
+    background: var(--Gray);
+}
+.client_left h2{
+    max-width: 327px;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 56px;
+    color: var(--Dark-Blue);
+}
+.client_left p{
+    max-width: 327px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(40, 41, 56, 0.70);
+    margin-top: 10px;
+}
+.client_slider_item h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    color: var(--Dark-Blue);
+    margin-bottom: 48px;
+}
+.client_name h4{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    color: var(--Dark-Blue);
+}
+.client_name h5{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--Dark-Blue);
+}
+/* ----------------------------client Markup end---------------------------- */
+/* ============================faq Markup start========================== */
+#faq_part{
+    padding: 50px 0;
+    background: var(--White);
+}
+.faq_left h2{
+    max-width: 328px;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 56px;
+    color: var(--Dark-Blue);
+    margin-bottom: 16px;
+}
+.faq_left .faq_link a{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    color: rgba(37, 5, 242, 0.78);
+
+}
+.faq_accordion .accordion-item .accordion-button {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: var(--Dark-Blue);
+}
+.faq_accordion .accordion-item .accordion-button span{
+    color: var(--Royal-Blue);
+}
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    box-shadow: none;
+}
+.accordion-item {
+    border: none;
+    border-bottom: 1px solid #ECECF1;
+}
+.accordion {
+    --bs-accordion-btn-focus-box-shadow: none; 
+}
+.accordion-body p{
+    max-width: 624px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-left: 47px;
+    color: var(--Dark-Blue);
+}
+.accordion-button::after {
+    content: "\2b";
+    background-image: none;
+    font-size: 18px;
+    color: var(--Dark-Blue);
+    display: flex;
+    align-items: center;
+    font-family:"FontAwesome";
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: none; 
+    transform: none;
+    font-size: 18px;
+    color: var(--Dark-Blue); 
+    content: "\f00d";  
+}
+/* ----------------------------faq Markup end---------------------------- */
+/* ============================inquiry Markup start========================== */
+#inquiry{
+    padding: 50px 0;
+    background: var(--White);
+}
+.inquiry_left{
+    height: 100%;
+    padding-bottom: 261px;
+    background: url(../image/inquiry\ .jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+.inquiry_left::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background: rgba(28, 30, 83, 0.50);
+    z-index: -1;
+}
+.inquiry_left_content{
+    max-width: 464px;
+}
+.inquiry_left h2{
+
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 74px;
+    color: var(--White);
+    padding-top: 96px;
+}
+.inquiry_left p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--White);
+    margin-top: 24px;
+}
+.inquiry_right{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: #1C1E53;
+}
+.inquiry_right_content{
+    margin-top: 96px;
+}
+.inquiry_right_content h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    color: var(--White);
+}
+.inquiry_right_content p{
+    max-width: 432px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--White);
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 14px 24px;
+    line-height: 38px;
+    color: var(--White) !important;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-control::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(244, 246, 252, 0.50);
+}
+.form-control:focus {
+    color: #FFFFFF;
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.5);
+    outline: 0;
+    box-shadow: none;
+}
+.inquiry_button .btn{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    color: var(--Dark-Blue);
+    padding: 10px 0;
+    background: var(--Yellow-Color);
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    color: var(--White); 
+    background-color: transparent;
+    border-color: var(--Yellow-Color); 
+}
+.inquiry_button .secound_btn{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    background: transparent;
+    border: none;
+    margin-top: 28px;
+    color: var(--White);
+    transition: all linear .3s;
+    margin-bottom: 40px;
+}
+.inquiry_button .secound_btn span{
+    margin-left: 10px;
+}
+.inquiry_button .secound_btn:hover{
+    transform: translateX(5px);
+}
+
+/* ----------------------------inquiry Markup end---------------------------- */
+/* ============================work Markup start========================== */
+
+/* ----------------------------work Markup end---------------------------- */
+/* ============================work Markup start========================== */
+
+/* ----------------------------work Markup end---------------------------- */
+
